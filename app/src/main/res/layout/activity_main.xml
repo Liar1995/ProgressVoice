@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="sunmeng.com.progressvoice.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1">
+
+        <sunmeng.com.progressvoice.ProgressLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/item_bg_right"
+            app:autoProgress="true"
+            app:loadedColor="#90C6FF"
+            app:maxProgress="100" />
+
+        <ImageView
+            android:id="@+id/chat_item_audio_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            android:background="@color/color_transparent"
+            android:minHeight="25dp"
+            android:minWidth="25dp"
+            android:src="@mipmap/icon_topic_play_right3"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/progressLayout" />
+
+    </RelativeLayout>
+
+
+    <sunmeng.com.progressvoice.CustomView
+        android:id="@+id/customView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/item_bg_right" />
+
+        <sunmeng.com.progressvoice.CustImageView
+            android:id="@+id/custImageView3"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/item_bg_right_pre" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:background="@color/color_transparent"
+            android:minHeight="25dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:minWidth="25dp"
+            android:src="@mipmap/icon_topic_play_right3" />
+
+    </FrameLayout>
+
+</LinearLayout>
