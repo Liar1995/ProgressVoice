@@ -84,4 +84,8 @@
 
     </FrameLayout>
 
+    <sunmeng.com.progressvoice.WaveBezier
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_weight="0.61" />
 </LinearLayout>
